@@ -1,22 +1,23 @@
 """Document loading and processing service with PDF support."""
 import urllib.request
 from pathlib import Path
-from typing import Optional, List
+from typing import List, Optional
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import (
-    TextLoader,
     PyPDFLoader,
+    TextLoader,
     UnstructuredPDFLoader,
 )
+
+from ..core.config import settings
+from ..core.exceptions import DocumentLoadError
+from ..core.logging_config import get_logger
 
 # Opzionali - decommentare se installati
 # from langchain_community.document_loaders import PDFPlumberLoader
 # from langchain_community.document_loaders import PyMuPDFLoader
 
-from ..core.config import settings
-from ..core.exceptions import DocumentLoadError
-from ..core.logging_config import get_logger
 
 logger = get_logger(__name__)
 

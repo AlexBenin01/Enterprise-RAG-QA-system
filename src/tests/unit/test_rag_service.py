@@ -1,12 +1,13 @@
 """Unit tests for RAG service."""
+from unittest.mock import MagicMock, Mock, patch
+
 import pytest
-from unittest.mock import Mock, patch, MagicMock
 from langchain_core.runnables import RunnableLambda
 
-from src.services.rag_service import RAGService
-from src.services.document_service import DocumentService
+from src.core.exceptions import EmbeddingError, LLMConnectionError, QueryError
 from src.domain.models import QueryRequest, QueryResponse
-from src.core.exceptions import LLMConnectionError, QueryError, EmbeddingError
+from src.services.document_service import DocumentService
+from src.services.rag_service import RAGService
 
 
 class TestRAGService:

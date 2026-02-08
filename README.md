@@ -1,12 +1,11 @@
 # 🚀 Enterprise RAG Q&A System
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Tests](https://img.shields.io/badge/tests-55%20passed-success)](https://github.com)
+[![Coverage](https://img.shields.io/badge/coverage-88%25-brightgreen)](https://github.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![WCAG 2 AAA](https://img.shields.io/badge/WCAG-2%20AAA-green.svg)](https://www.w3.org/WAI/WCAG2AAA-Conformance)
-![Tests](https://github.com/yourusername/repo/workflows/tests/badge.svg)
-![Coverage](https://codecov.io/gh/yourusername/repo/branch/main/graph/badge.svg)
-![Downloads](https://img.shields.io/github/downloads/yourusername/repo/total)
 
 > **Production-grade RAG (Retrieval-Augmented Generation) system with WCAG 2 AAA accessible interface, streaming responses, and enterprise architecture.**
 

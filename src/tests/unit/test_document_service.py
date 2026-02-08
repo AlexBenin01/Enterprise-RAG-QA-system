@@ -1,10 +1,11 @@
 """Unit tests for document service."""
-import pytest
 from pathlib import Path
-from unittest.mock import Mock, patch, mock_open
+from unittest.mock import Mock, mock_open, patch
 
-from src.services.document_service import DocumentService
+import pytest
+
 from src.core.exceptions import DocumentLoadError
+from src.services.document_service import DocumentService
 
 
 class TestDocumentService:

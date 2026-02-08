@@ -1,16 +1,17 @@
 """Pytest configuration and fixtures."""
 import os
-import pytest
 from pathlib import Path
-from unittest.mock import Mock, MagicMock, patch
+from unittest.mock import MagicMock, Mock, patch
+
+import pytest
 
 # Force HuggingFace embeddings in tests (override .env)
 os.environ['EMBEDDING_PROVIDER'] = 'huggingface'
 os.environ['EMBEDDING_MODEL'] = 'sentence-transformers/all-MiniLM-L6-v2'
 
 from src.core.config import settings
-from src.services.rag_service import RAGService
 from src.services.document_service import DocumentService
+from src.services.rag_service import RAGService
 
 
 @pytest.fixture(scope="session", autouse=True)
